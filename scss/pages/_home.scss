@@ -12,6 +12,9 @@
        }
        &__card {
         display: inline;
+        justify-content: center;
+        text-align: center;
+        transition: transform .2s;
         h4 {
             text-transform: uppercase;
             margin-top: 4.2rem;
@@ -21,7 +24,17 @@
          }
          
          i {
-            text-align: center;
+            margin-top: 3rem;
+            font-size: 4rem;
+         }
+         p {
+            margin-top: 3rem;
+         }
+         a {
+            margin-top: 3rem;
+         }
+         &:hover {
+            scale: 1.5;
          }
        }
     }

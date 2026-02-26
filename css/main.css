@@ -1595,6 +1595,9 @@ img {
 }
 .home-services__card {
   display: inline;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.2s;
 }
 .home-services__card h4 {
   text-transform: uppercase;
@@ -1604,5 +1607,15 @@ img {
   text-align: center;
 }
 .home-services__card i {
-  text-align: center;
+  margin-top: 3rem;
+  font-size: 4rem;
+}
+.home-services__card p {
+  margin-top: 3rem;
+}
+.home-services__card a {
+  margin-top: 3rem;
+}
+.home-services__card:hover {
+  scale: 1.5;
 }/*# sourceMappingURL=main.css.map */
