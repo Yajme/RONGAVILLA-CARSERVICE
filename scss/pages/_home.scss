@@ -1,6 +1,9 @@
 @use '../abstract/' as *;
 
 .home {
+   
+}
+.banner {
     &-services {
        &__wrapper {
          background-color: $clr--dark;
