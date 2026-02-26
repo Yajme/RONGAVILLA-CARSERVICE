@@ -1,0 +1,47 @@
+@use "../abstract/" as *;
+@use "../base/typography" as *;
+
+.header {
+  background-color: $clr--secondary;
+
+  &__wrapper {
+    @include between;
+  }
+
+  &__logo {
+    img {
+      object-fit: fill;
+      height: 100%;
+    }
+  }
+  &__nav {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      li {
+        a {
+            position: relative;
+          color: $clr--light;
+          text-transform: uppercase;
+          font-family: $font-secondary;
+          strong {
+            height: 10px;
+            background-color: $clr--primary;
+            display: inline-block;
+            z-index: 1;
+            top: 106px;
+            position: absolute;
+            width: 0%;
+            left: 0;
+          }
+        }
+        &.current {
+          a strong {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

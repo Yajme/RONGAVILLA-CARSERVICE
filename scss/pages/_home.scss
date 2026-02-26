@@ -1,0 +1,28 @@
+@use '../abstract/' as *;
+
+.home {
+    &-services {
+       &__wrapper {
+         background-color: $clr--dark;
+         display: flex;
+         gap: 2rem;
+         color: $clr--light;
+         padding: 4rem;
+         
+       }
+       &__card {
+        display: inline;
+        h4 {
+            text-transform: uppercase;
+            margin-top: 4.2rem;
+            padding-bottom: 3.2rem;
+            border-bottom: 4px solid $clr--line;
+            text-align: center;
+         }
+         
+         i {
+            text-align: center;
+         }
+       }
+    }
+}
